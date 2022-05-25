@@ -12,6 +12,6 @@ app.use(bodyParser.json());
 
 let personaController = new PersonaController();
 
-app.use("/personas", personaController.router);
+app.use("/", personaController.router);
 
 module.exports = app;
